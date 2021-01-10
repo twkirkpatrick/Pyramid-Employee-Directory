@@ -16,22 +16,25 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     fontSize: "70px",
-    color: "lightgrey"
+    color: "lightgrey",
+    margin: "0"
   },
   iconFlip: {
     transform: "scaleY(-1)",
     fontSize: "70px",
-    color: "lightgrey"
+    color: "lightgrey",
+    margin: "0"
   },
   header: {
-    margin: "0 0 0 0",
+    margin: "0",
     fontWeight: "600",
     color: "lightgrey",
     fontSize: "60px"
   },
   logo: {
     fontWeight: "200",
-    fontSize: "45px"
+    fontSize: "45px",
+    margin: "0"
   },
   headline: {
     fontSize: "20px",
