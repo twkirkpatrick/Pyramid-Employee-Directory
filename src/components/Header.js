@@ -12,20 +12,22 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(0),
     textAlign: "center",
-    color: "lightblue",
-    backgroundColor: "black",
+    backgroundColor: "rgba(20, 52, 65, 0.5)",
     fontSize: "30px"
   },
   icon: {
-    fontSize: "70px"
+    fontSize: "70px",
+    color: "lightgrey"
   },
   iconFlip: {
     transform: "scaleY(-1)",
-    fontSize: "70px"
+    fontSize: "70px",
+    color: "lightgrey"
   },
   header: {
-    margin: "0",
-    fontWeight: "600"
+    margin: "0 0 0 0",
+    fontWeight: "600",
+    color: "lightgrey"
   },
   logo: {
     fontWeight: "200"
