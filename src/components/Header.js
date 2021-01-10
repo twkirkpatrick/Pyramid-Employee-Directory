@@ -12,8 +12,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(0),
     textAlign: "center",
-    backgroundColor: "rgba(20, 52, 65, 0.5)",
-    fontSize: "30px"
+    backgroundColor: "rgba(20, 52, 65, 0.5)"
   },
   icon: {
     fontSize: "70px",
@@ -27,10 +26,17 @@ const useStyles = makeStyles((theme) => ({
   header: {
     margin: "0 0 0 0",
     fontWeight: "600",
-    color: "lightgrey"
+    color: "lightgrey",
+    fontSize: "60px"
   },
   logo: {
-    fontWeight: "200"
+    fontWeight: "200",
+    fontSize: "45px"
+  },
+  headline: {
+    fontSize: "20px",
+    margin: "0",
+    color: "lightgrey"
   }
 }));
 
@@ -45,6 +51,9 @@ const Header = () => {
             <h2 class={classes.header}>
               <span className={classes.logo}>Welcome To </span> Pyramid
             </h2>
+            <p className={classes.headline}>
+              Keeping all of your employee information handy from the top down.
+            </p>
             <FilterHdrIcon className={classes.iconFlip} />
           </Paper>
         </Grid>
