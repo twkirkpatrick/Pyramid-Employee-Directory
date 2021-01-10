@@ -5,3 +5,15 @@ body {
   font-family: "Oswald", sans-serif;
   /* background-color: rgba(36, 5, 65, 0.644); */
 }
+
+.MuiInput-underline:before {
+  border-bottom: 1px solid white !important;
+}
+
+.MuiInput-underline:after {
+  border-bottom: 3px solid rgb(214, 205, 75) !important;
+}
+
+.MuiInputBase-root {
+  color: lightgrey !important;
+}

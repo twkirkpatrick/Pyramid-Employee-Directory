@@ -10,7 +10,7 @@ import AccountCircle from "@material-ui/icons/AccountCircle";
 
 const useStyles = makeStyles((theme) => ({
   margin: {
-    margin: theme.spacing(3),
+    marginTop: "1.5rem",
     width: "100%"
   }
 }));
@@ -32,10 +32,9 @@ const SearchBar = () => {
             id="input-with-icon-adornment"
             startAdornment={
               <InputAdornment position="start">
-                <AccountCircle />
+                <AccountCircle style={{ color: "white" }} />
               </InputAdornment>
             }
-            style={{ borderBottom: "1px solid lightgrey", color: "lightgrey" }}
           />
         </FormControl>
       </Grid>
