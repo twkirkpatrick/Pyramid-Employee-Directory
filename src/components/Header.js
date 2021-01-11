@@ -16,29 +16,38 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     fontSize: "70px",
-    color: "lightgrey",
-    margin: "0"
+    color: "rgb(214, 205, 75)",
+    marginBottom: "0",
+    position: "relative",
+    top: "18px"
   },
   iconFlip: {
     transform: "scaleY(-1)",
     fontSize: "70px",
-    color: "lightgrey",
+    color: "rgb(214, 205, 75)",
     margin: "0"
   },
   header: {
     margin: "0",
     fontWeight: "600",
-    color: "lightgrey",
+    color: "rgb(214, 205, 75)",
     fontSize: "60px"
+  },
+  border: {
+    borderBottom: "1px solid lightgrey",
+    width: "45%",
+    margin: "auto"
   },
   logo: {
     fontWeight: "200",
     fontSize: "45px",
-    margin: "0"
+    margin: "0",
+    color: "lightgrey"
   },
   headline: {
     fontSize: "20px",
     margin: "0",
+    marginBottom: "10px",
     color: "lightgrey"
   }
 }));
@@ -57,6 +66,7 @@ const Header = () => {
             <p className={classes.headline}>
               Keeping all of your employee information handy from the top down.
             </p>
+            <div className={classes.border}></div>
             <FilterHdrIcon className={classes.iconFlip} />
           </Paper>
         </Grid>
