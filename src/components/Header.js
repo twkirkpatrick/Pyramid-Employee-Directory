@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     fontSize: "70px",
-    color: "rgb(214, 205, 75)",
+    color: "lightgrey",
     marginBottom: "0",
     position: "relative",
     top: "18px"
@@ -24,13 +24,13 @@ const useStyles = makeStyles((theme) => ({
   iconFlip: {
     transform: "scaleY(-1)",
     fontSize: "70px",
-    color: "rgb(214, 205, 75)",
+    color: "lightgrey",
     margin: "0"
   },
   header: {
     margin: "0",
     fontWeight: "600",
-    color: "rgb(214, 205, 75)",
+    color: "lightgrey",
     fontSize: "60px"
   },
   border: {
@@ -60,7 +60,7 @@ const Header = () => {
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <FilterHdrIcon className={classes.icon} />
-            <h2 class={classes.header}>
+            <h2 className={classes.header}>
               <span className={classes.logo}>Welcome To </span> Pyramid
             </h2>
             <p className={classes.headline}>

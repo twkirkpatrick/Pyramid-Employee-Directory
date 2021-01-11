@@ -26,7 +26,7 @@ const SearchBar = () => {
             htmlFor="input-with-icon-adornment"
             style={{ color: "lightgrey" }}
           >
-            Filter Employees by Name, Address, Phone Number
+            Filter Employees by Name, Phone Number, and Email
           </InputLabel>
           <Input
             id="input-with-icon-adornment"
