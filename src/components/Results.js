@@ -29,7 +29,16 @@ const Results = () => {
     const res = await axios.get(
       "https://randomuser.me/api/?results=100&nat=us&inc=name,email,dob,phone,id,picture"
     );
-    setUsers(res.data.results);
+    const sortedUsers = res.data.results.sort((a, b) => {
+      if (a.name.last < b.name.last) {
+        return -1;
+      }
+      if (a.name.last > b.name.last) {
+        return 1;
+      }
+      return 0;
+    });
+    setUsers(sortedUsers);
     console.log(users);
   };
 
@@ -45,7 +54,8 @@ const Results = () => {
     return (
       user.name.first.toLowerCase().indexOf(search) !== -1 ||
       user.name.last.toLowerCase().indexOf(search) !== -1 ||
-      user.phone.indexOf(search) !== -1
+      user.phone.indexOf(search) !== -1 ||
+      user.email.indexOf(search) !== -1
     );
   });
 
