@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const SearchBar = () => {
+const SearchBar = ({ onChange }) => {
   const classes = useStyles();
 
   return (
@@ -29,6 +29,7 @@ const SearchBar = () => {
             Filter Employees by Name, Phone Number, and Email
           </InputLabel>
           <Input
+            onChange={onChange}
             id="input-with-icon-adornment"
             startAdornment={
               <InputAdornment position="start">

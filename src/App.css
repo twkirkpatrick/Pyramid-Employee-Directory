@@ -17,3 +17,7 @@ body {
 .MuiInputBase-root {
   color: lightgrey !important;
 }
+
+.MuiTableRow-root {
+  font-family: "Oswald", sans-serif !important;
+}
