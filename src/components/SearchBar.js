@@ -26,7 +26,7 @@ const SearchBar = ({ onChange }) => {
             htmlFor="input-with-icon-adornment"
             style={{ color: "lightgrey" }}
           >
-            Filter Employees by Name, Phone Number, and Email
+            Filter Employees by Name, Phone Number, or Email
           </InputLabel>
           <Input
             onChange={onChange}
