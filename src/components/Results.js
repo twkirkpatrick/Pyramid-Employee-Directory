@@ -29,15 +29,7 @@ const Results = () => {
     const res = await axios.get(
       "https://randomuser.me/api/?results=100&nat=us&inc=name,email,dob,phone,id,picture"
     );
-    /* const sortedUsers = res.data.results.sort((a, b) => {
-      if (a.name.last < b.name.last) {
-        return -1;
-      }
-      if (a.name.last > b.name.last) {
-        return 1;
-      }
-      return 0;
-    }); */
+
     const sortedUsers = res.data.results.sort((a, b) => {
       if (a.name.last < b.name.last) {
         return -1;
@@ -45,7 +37,6 @@ const Results = () => {
       return 1;
     });
     setUsers(sortedUsers);
-    console.log(users);
   };
 
   useEffect(() => {
