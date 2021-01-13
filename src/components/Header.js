@@ -5,6 +5,7 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import FilterHdrIcon from "@material-ui/icons/FilterHdr";
 
+//Material UI styles
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1

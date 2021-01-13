@@ -8,6 +8,7 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import FormControl from "@material-ui/core/FormControl";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 
+//Material UI styles
 const useStyles = makeStyles((theme) => ({
   margin: {
     marginTop: "1.5rem",
@@ -15,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+//Beginning of SearchBar component--passing in the onChange function as a prop
 const SearchBar = ({ onChange }) => {
   const classes = useStyles();
 
