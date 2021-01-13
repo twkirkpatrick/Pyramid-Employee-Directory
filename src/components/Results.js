@@ -2,16 +2,19 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
+import { DataGrid } from "@material-ui/data-grid";
 import Grid from "@material-ui/core/Grid";
-import UserItem from "./UserItem";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableContainer from "@material-ui/core/TableContainer";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
 import SearchBar from "./SearchBar";
+
+const columns = [
+  { field: "id", headerName: "ID", width: 130 },
+  /* { field: "image", headerName: "Image", width: 130 }, */
+  { field: "firstName", headerName: "First Name", width: 130 },
+  { field: "lastName", headerName: "Last Name", width: 130 },
+  { field: "email", headerName: "Email", width: 225 },
+  { field: "phone", headerName: "Phone", width: 160 },
+  { field: "dob", headerName: "DOB", width: 125, type: "date" }
+];
 
 const useStyles = makeStyles({
   table: {
@@ -49,8 +52,9 @@ const Results = () => {
 
   let filteredUsers = users.filter((user) => {
     return (
-      user.name.first.toLowerCase().indexOf(search) !== -1 ||
-      user.name.last.toLowerCase().indexOf(search) !== -1 ||
+      user.name.first.indexOf(search) !== -1 ||
+      user.id.value.indexOf(search) !== -1 ||
+      user.name.last.indexOf(search) !== -1 ||
       user.phone.indexOf(search) !== -1 ||
       user.email.indexOf(search) !== -1
     );
@@ -60,36 +64,32 @@ const Results = () => {
     <Container maxWidth="md">
       <SearchBar onChange={onChange} />
       <Grid item xs={12}>
-        <TableContainer component={Paper} style={{ marginTop: "2rem" }}>
-          <Table className={classes.table} aria-label="simple table">
-            <TableHead>
-              <TableRow>
-                <TableCell>Image</TableCell>
-                <TableCell align="center">First</TableCell>
-                <TableCell align="center">Last</TableCell>
-                <TableCell align="center">Email</TableCell>
-                <TableCell align="center">Phone</TableCell>
-                <TableCell align="center">DOB</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {filteredUsers.map((user) => (
-                <UserItem
-                  firstName={user.name.first}
-                  lastName={user.name.last}
-                  email={user.email}
-                  dob={user.dob.date}
-                  phone={user.phone}
-                  key={user.id.value}
-                  image={user.picture.thumbnail}
-                />
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
+        <div
+          style={{
+            height: 400,
+            width: "100%",
+            backgroundColor: "white",
+            marginTop: "20px"
+          }}
+        >
+          <DataGrid
+            rows={filteredUsers.map((user) => ({
+              id: user.id.value,
+              firstName: user.name.first,
+              lastName: user.name.last,
+              email: user.email,
+              phone: user.phone,
+              dob: new Date(user.dob.date),
+              image: user.picture.thumbnail
+            }))}
+            columns={columns}
+            pageSize={100}
+            hideFooter={true}
+            disableColumnMenu={true}
+          />
+        </div>
       </Grid>
     </Container>
   );
 };
-
 export default Results;
