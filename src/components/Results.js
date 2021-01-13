@@ -8,7 +8,12 @@ import SearchBar from "./SearchBar";
 
 const columns = [
   { field: "id", headerName: "ID", width: 130 },
-  /* { field: "image", headerName: "Image", width: 130 }, */
+  {
+    field: "image",
+    headerName: "Image",
+    width: 130,
+    renderCell: (params) => <img src={params.value} alt="headshot" />
+  },
   { field: "firstName", headerName: "First Name", width: 130 },
   { field: "lastName", headerName: "Last Name", width: 130 },
   { field: "email", headerName: "Email", width: 225 },
