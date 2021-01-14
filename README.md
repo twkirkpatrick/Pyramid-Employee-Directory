@@ -6,7 +6,7 @@ An employee directory built with React that allows the user to have quick access
 
 <img src = "public/logo.png" alt="screenshot of pyramid">
 
-View the deployed application <a href = "#!">here</a>
+View the deployed application <a href = "https://zealous-lalande-9fc11c.netlify.app/">here</a>
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ If you would like to use the application in your local environment:
 2. Install required dependencies by running command `npm i`
 3. Run command `npm start`
 
-Otherwise, visit the deployed application <a href = "#!">here</a>
+Otherwise, visit the deployed application <a href = "https://zealous-lalande-9fc11c.netlify.app/">here</a>
 
 ## Usage
 
