@@ -46,6 +46,14 @@ Otherwise, visit the deployed application <a href = "#!">here</a>
 
 <img src = "public/number.png" alt="screenshot of pyramid">
 
+#### Filtered by ID
+
+<img src = "public/id.png" alt="screenshot of pyramid">
+
+#### Users are able to sort all categories in ascending and descending order
+
+<img src = "public/desc.png" alt="screenshot of pyramid">
+
 ## Resources
 
 **React** <br>
