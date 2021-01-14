@@ -2,7 +2,7 @@
 
 An employee directory built with React that allows the user to have quick access to their employee's information. The user is able to filter the employees by name, email, phone number, etc. The Random User API was utilized to populate the table with dummy users.
 
-![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg?style=for-the-badge&logo=appveyor) ![Frontend:React](https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=appveyor) ![API:Random User API](https://img.shields.io/badge/API-Random%20User%20API-red?style=for-the-badge&logo=appveyor) ![HTTP Client:Axios](https://img.shields.io/badge/HTTP%20Client-Axios-green?style=for-the-badge&logo=appveyor)
+![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg?style=for-the-badge&logo=appveyor) ![Frontend:React](https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=appveyor) ![Framework:Material UI](https://img.shields.io/badge/Framework-Material%20UI-yellow?style=for-the-badge&logo=appveyor) ![API:Random User API](https://img.shields.io/badge/API-Random%20User%20API-red?style=for-the-badge&logo=appveyor) ![HTTP Client:Axios](https://img.shields.io/badge/HTTP%20Client-Axios-green?style=for-the-badge&logo=appveyor)
 
 <img src = "public/logo.png" alt="screenshot of pyramid">
 
